@@ -1,4 +1,6 @@
-# Steps
+# Packaging 
+
+## Local to PyPI
 
 ```shell
 >> uv version --bump minor 
@@ -8,4 +10,17 @@
 >> uv run python
 
 >> uv run src/holymeow/main.py 
+```
+
+## GHA to PyPI
+
+```shell
+>> uv version --bump minor 
+
+>> git add ..
+>> git commit -m "up"
+>> git push origin master
+
+>> git tag -a v0.6.0 -m "First release"
+>> git push origin v0.6.0
 ```
