@@ -1,2 +1,1 @@
-def main() -> None:
-    print("Hello from holymeow!")
+from .main import talk
